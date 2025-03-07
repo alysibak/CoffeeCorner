@@ -1,0 +1,258 @@
+/* General styles */
+body {
+    font-family: 'comic sans', sans-serif;
+    color: #45230b;
+    background: #f7f3ee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.error-container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #45230b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* End of general styles */
+
+/* Coffee-themed styles */
+header {
+    background-image: url('coffee.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f7f3ee;
+    text-align: center;
+    padding: 100px 20px;
+    height: 75vh;
+    position: relative;
+    background-position: center bottom 20%;
+}
+
+.header-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.explore-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.nav {
+    background-color: #45230b;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav a {
+    color: #f7f3ee;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #7d4e2c;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.article {
+    background-color: #f7f3ee;
+    margin: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    flex: 1 1 45%;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: calc(50% - 20px);
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #45230b;
+    color: #f7f3ee;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+    border-top: 2px solid #f7f3ee;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.about-section, .best-picks, .contact-section {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.about-section {
+    background-color: #f7f3ee;
+}
+
+.best-picks {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f7f3ee;
+}
+
+.contact-section {
+    background-color: #f7f3ee;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #45230b;
+    color: #f7f3ee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3a1b08;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color: #f7f3ee;
+    margin: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.gallery-item img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.gallery-item p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* New section for Brewing Methods */
+.brewing-methods-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.brewing-methods-container .article {
+    flex: 1 1 calc(45% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0e6d2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: left;
+}
+
+.brewing-methods-container .article h2 {
+    font-size: 24px;
+    color: #45230b;
+    margin-bottom: 10px;
+}
+
+.brewing-methods-container .article p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5a5248;
+    margin-bottom: 15px;
+}
+
+.brewing-methods-container .article img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 20px 10px;
+    }
+
+    .article {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+/* End of responsive styles */
